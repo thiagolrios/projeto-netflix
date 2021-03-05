@@ -1,2 +1,2 @@
 # projeto-netflix
-Projeto Netflix do bootcamp
+Projeto do bootcamp para reciar a página do Netflix
