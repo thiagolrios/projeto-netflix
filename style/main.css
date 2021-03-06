@@ -17,20 +17,29 @@ body{
     color:white;
 }
 
-
-header .container{
-    display:flex;
-    flex-direction: row;
+header {
+    padding: 15px 15px 0px 15px;
+    top: 0;
+    display: grid;  
+    grid-gap:5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     "nt mn mn sb . . . "; 
+    background-color: var(--preta);
+    width: 100%;
+    margin-bottom: 10px;  
     align-items:center;
-    justify-content: space-between;
-}
+  }
 
-header .logo{
+  header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;   
+    margin-bottom:0px;
+
 }
+
 
 header nav a{
     text-decoration:none;
@@ -46,7 +55,7 @@ header nav a:hover{
 
 .filme-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/soul.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/got7.png');
 
     height:400px;
     background-size:cover;
@@ -106,4 +115,14 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+}
+
+.titulo-lista{
+    padding: 10px 20px;
+    margin-top: 20px;  
+}
+
+a{
+    text-decoration:none;
+    color: unset;
 }
